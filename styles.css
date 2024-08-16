@@ -11,11 +11,12 @@ body {
 }
 
 .hero {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 100px 50px;
-    background: radial-gradient(circle at center, rgba(136, 176, 255, 0.3), rgba(178, 89, 232, 0.45));
+    overflow: hidden;
     text-align: center;
 }
 
@@ -26,9 +27,10 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: inherit;
+    background: radial-gradient(circle at center, rgba(136, 176, 255, 0.3), rgba(178, 89, 232, 0.45));
     opacity: 0.5;
     z-index: 0;
+    background-size: cover;
 }
 
 .hero-text {
@@ -38,7 +40,7 @@ body {
 }
 
 .hero-text h1 {
-    font-size: 48px;
+    font-size: 3em;
     line-height: 1.2;
     font-weight: normal;
 }
@@ -52,7 +54,7 @@ body {
 
 .hero-text p {
     margin: 20px 0;
-    font-size: 18px;
+    font-size: 1.2em;
     line-height: 1.6;
     font-weight: normal;
 }
@@ -74,7 +76,6 @@ body {
     color: #fff;
 }
 
-
 .benefits {
     background-color: #111;
     padding: 50px;
@@ -89,7 +90,7 @@ body {
 }
 
 .benefits li {
-    font-size: 28px;
+    font-size: 1.75em;
     margin: 30px 0;
     display: flex;
     align-items: flex-start;
@@ -97,7 +98,7 @@ body {
 
 .benefits li::before {
     content: '•';
-    font-size: 50px;
+    font-size: 2em;
     color: #ccc;
     margin-right: 20px;
     align-self: flex-start;
@@ -109,14 +110,32 @@ body {
 }
 
 .benefit-title {
-    font-size: 36px;
+    font-size: 2em;
     font-weight: normal; 
     margin-bottom: 5px; 
 }
 
 .benefits p {
-    font-size: 18px;
+    font-size: 1em;
     margin: 0;
     color: #ccc;
     font-weight: normal;
+}
+
+@media (min-width: 1200px) {
+    .hero-text h1 {
+        font-size: 4em;
+    }
+
+    .hero-text p {
+        font-size: 1.4em;
+    }
+
+    .benefits li {
+        font-size: 2em;
+    }
+
+    .benefits p {
+        font-size: 1.1em;
+    }
 }
