@@ -1,16 +1,50 @@
 /* This is to modify anything outside of components */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 
 #app {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "SFPro";
+  src: url("fonts/SFNS.woff2") format("woff2");
+}
+
+body {
+  margin: 0;
+  font-family: "SFPro", "SF Pro", "SF Pro Display", -apple-system,
+    BlinkMacSystemFont, "Helvetica Neue", "Helvetica", "Arial", system-ui,
+    sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+:root {
+  --bg: #121214;
+  --surface0: #212124;
+  --surface1: #343438;
+  --text: #eef;
+  --subtext0: #aab;
+  --accent0: #88B0FF;
+  --accent1: #B259E8;
+}
+
+.hero-text h1 {
+  background: linear-gradient(
+      90deg,
+      var(--accent0),
+      var(--accent1),
+      var(--accent0)
+    )
+    0 0 / var(--bg-size) 100%;
 }
