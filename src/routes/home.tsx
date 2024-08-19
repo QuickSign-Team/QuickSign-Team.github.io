@@ -32,6 +32,9 @@ const Home: Component<
         position: relative;
         z-index: 1;
         max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .hero-text h2 {
@@ -63,23 +66,29 @@ const Home: Component<
         font-weight: normal;
     }
 
+    .btn-wrap {
+        background: linear-gradient(45deg, var(--accent0), var(--accent1));
+        width: max-content;
+        border-radius: 99px;
+    }
+
     .more-btn,
     .more-btn:visited {
         display: inline-block;
-        background: var(--surface1);
-        border-image: linear-gradient(45deg, var(--accent0), var(--accent1)) 1;
+        background: linear-gradient(45deg, var(--surface1), var(--surface1));
         color: var(--accent0);
         padding: 10px 20px;
-        border-radius: 20px;
+        border-radius: 99px;
         font-weight: bold;
         text-decoration: none;
-        transition: background-color 0.3s, color 0.3s;
+        transition: background 0.3s, color 0.3s;
         cursor: pointer;
+        margin: 2px;
     }
 
     .more-btn:hover {
         background: linear-gradient(45deg, var(--accent0), var(--accent1));
-        transition: background-color 0.3s, color 0.3s;
+        transition: background 0.3s, color 0.3s;
         color: #fff;
     }
 
@@ -98,7 +107,16 @@ const Home: Component<
         gap: 30px;
     }
 
-    @media (max-width: 768px) {
+    @media (orientation: portrait) {
+
+        .hero-text h1 {
+            font-size: 4em;
+        }
+
+        .hero-text p {
+            font-size: 1.4em;
+        }
+        
         .benefits-container {
             padding: 0 15px;
         }
@@ -112,15 +130,7 @@ const Home: Component<
         }
     }
 
-    @media (min-width: 1200px) {
-        /* .hero-text h1 {
-            font-size: 4em;
-        }
-
-        .hero-text p {
-            font-size: 1.4em;
-        } */
-
+    @media (orientation: landscape) {
         .benefit-title {
             font-size: 1.75em;
         }
@@ -147,9 +157,11 @@ const Home: Component<
           <h2>Introducing</h2>
           <h1>QuickSign</h1>
           <p>a local development certificate signer for iOS devices.</p>
+          <div class="btn-wrap">
           <a href="https://x.com/QuickSigniOS" class="more-btn" download>
             eta son™
           </a>
+          </div>
         </div>
       </section>
 
