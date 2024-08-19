@@ -4,7 +4,7 @@ import Home from './routes/home';
 
 //base styles
 import './index.css';
-let router = new Router(
+new Router(
     <Route>
         <Route path="" show={<Home />} />
     </Route>
