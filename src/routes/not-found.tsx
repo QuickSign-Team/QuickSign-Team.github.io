@@ -1,6 +1,10 @@
 const NotFound: Component<{},{}> = function() {
     this.css = `
-    margin: 3rem
+    margin: 1rem;
+
+    * {
+        margin-block: 0.25rem
+    }
     `
     return (
         <div>

@@ -63,7 +63,8 @@ const Home: Component<
         font-weight: normal;
     }
 
-    .more-btn {
+    .more-btn,
+    .more-btn:visited {
         display: inline-block;
         background: var(--surface1);
         border-image: linear-gradient(45deg, var(--accent0), var(--accent1)) 1;
@@ -73,6 +74,7 @@ const Home: Component<
         font-weight: bold;
         text-decoration: none;
         transition: background-color 0.3s, color 0.3s;
+        cursor: pointer;
     }
 
     .more-btn:hover {

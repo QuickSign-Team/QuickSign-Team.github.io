@@ -1,4 +1,15 @@
 /* This is to modify anything outside of components */
+
+:root {
+    --bg: #121214;
+    --surface0: #212124;
+    --surface1: #343438;
+    --text: #eef;
+    --subtext0: #aab;
+    --accent0: #88B0FF;
+    --accent1: #B259E8;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -14,6 +25,15 @@ body {
   width: 100%;
   height: 100%;
 }
+
+a {
+    color: var(--accent0);
+}
+
+a:visited {
+    color: var(--accent1);
+}
+
 
 @font-face {
   font-family: "SFPro";
@@ -32,16 +52,6 @@ body {
     "Apple Color Emoji", sans-serif;
   background-color: var(--bg);
   color: var(--text);
-}
-
-:root {
-  --bg: #121214;
-  --surface0: #212124;
-  --surface1: #343438;
-  --text: #eef;
-  --subtext0: #aab;
-  --accent0: #88B0FF;
-  --accent1: #B259E8;
 }
 
 .hero-text h1 {
