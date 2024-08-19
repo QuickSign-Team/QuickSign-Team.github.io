@@ -116,14 +116,16 @@ const Home: Component<
         .hero-text p {
             font-size: 1.4em;
         }
-        
+
         .benefits-container {
             padding: 0 15px;
+            padding-inline: 15px;
+            gap: 25px;
         }
         .benefit-item {
-            width: 100%;
-            padding: 20px 15px;
-            margin-bottom: 20px;
+            width: calc(100vw - 30px);
+            /* padding: 20px 15px; */
+            /* margin-bottom: 20px; */
         }
         .benefit-item:last-child {
             margin-bottom: 0;
@@ -268,6 +270,17 @@ const BenefitCard: Component<{b: Benefit}, {flip: boolean}> = function()  {
         position: absolute;
         transform: rotateY(180deg);
         padding: 1.5rem;
+    }
+
+    @media(pointer: coarse) {
+        .benefit-inner:hover {
+            transform: none!important;
+            box-shadow: none!important;
+        }
+
+        .benefit-inner.flip:hover {
+            transform: rotateY(180deg)!important;
+        }
     }
     `
 
