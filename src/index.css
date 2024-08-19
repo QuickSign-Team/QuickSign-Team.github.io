@@ -17,14 +17,19 @@ body {
 
 @font-face {
   font-family: "SFPro";
-  src: url("/fonts/SFNS.woff2") format("woff2");
+  src: local("SF Pro"), url("/fonts/SFNS.woff2") format("woff2"), local("SF Pro Display");
+}
+
+@font-face {
+    font-family: "Apple Color Emoji";
+    src: local("Apple Color Emoji"), url("/fonts/AppleColorEmoji.woff2") format("woff2");
 }
 
 body {
   margin: 0;
-  font-family: "SFPro", "SF Pro", "SF Pro Display", -apple-system,
+  font-family: "SFPro", -apple-system,
     BlinkMacSystemFont, "Helvetica Neue", "Helvetica", "Arial", system-ui,
-    sans-serif;
+    "Apple Color Emoji", sans-serif;
   background-color: var(--bg);
   color: var(--text);
 }

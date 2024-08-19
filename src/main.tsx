@@ -8,6 +8,7 @@ import './index.css';
 new Router(
     <Route>
         <Route path="" show={<Home />} />
+        <Route path="/website" show={<Home />} />
         <Route path="*" show={<NotFound />} />
     </Route>
 ).mount(document.getElementById('app')!);
