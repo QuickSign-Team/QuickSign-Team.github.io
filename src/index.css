@@ -17,7 +17,7 @@ body {
 
 @font-face {
   font-family: "SFPro";
-  src: url("fonts/SFNS.woff2") format("woff2");
+  src: url("/fonts/SFNS.woff2") format("woff2");
 }
 
 body {
