@@ -42,7 +42,7 @@ a:visited {
 
 @font-face {
     font-family: "Apple Color Emoji";
-    src: local("Apple Color Emoji"), url("/fonts/AppleColorEmoji.woff2") format("woff2");
+    src: local("Apple Color Emoji"), url("/fonts/AppleColorEmoji.ttf") format("truetype");
 }
 
 body {
