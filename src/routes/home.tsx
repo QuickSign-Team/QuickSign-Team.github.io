@@ -163,7 +163,7 @@ const Home: Component<
           <h1>QuickSign</h1>
           <p>a local development certificate signer for iOS devices.</p>
           <div class="btn-wrap">
-            <a href="/lqs" class="more-btn">libqsign</a>
+            <a href="/adhoc" class="more-btn">Adhoc signer</a>
             <a href="https://x.com/QuickSigniOS" class="more-btn" download>
               eta son™
             </a>
